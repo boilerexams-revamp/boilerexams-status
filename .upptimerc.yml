@@ -21,6 +21,7 @@ status-website:
   theme: light
   logoUrl: https://boilerexams.com/boilerexams-logo.png
   logoHref: https://boilerexams.com
+  hideNavLogo: true
   favicon: https://boilerexams.com/favicon.ico
   links:
     - rel: stylesheet
@@ -30,7 +31,6 @@ status-website:
     :root { --body-background-color: #f0f0f0; --body-text-color: #343a40;
     --nav-border-bottom-color: #e4dccb; --card-border-color: #e4dccb; --nav-current-border-bottom-color: #cfb991; }
     body, button, input { font-family: Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    nav .logo img { height: 2rem !important; }
   name: Boilerexams Status
   introTitle: "Boilerexams status"
   introMessage: Live uptime for Boilerexams and BoilerClasses, checked every 5 minutes.
