@@ -1,20 +1,25 @@
 owner: boilerexams-revamp
 repo: boilerexams-status
 
+# A response slower than maxResponseTime (ms) shows as degraded
 sites:
   - name: Boilerexams
     url: https://boilerexams.com/
+    maxResponseTime: 5000
     # A Cloudflare or proxy error page still returns HTML, so check for the real page
     __dangerous__body_down_if_text_missing: "<title>Boilerexams"
   - name: Boilerexams API
     url: https://api.boilerexams.com/v3/
+    maxResponseTime: 5000
     # The API root reports database health; a 200 with the database down is still an outage
     __dangerous__body_down_if_text_missing: '"database_ok":true'
   - name: BoilerClasses
     url: https://boilerclasses.com/
+    maxResponseTime: 5000
     __dangerous__body_down_if_text_missing: "<title>BoilerClasses"
   - name: Staff sign-in
     url: https://login.boilerexams.com/-/health/live/
+    maxResponseTime: 5000
 
 status-website:
   cname: status.boilerexams.com
