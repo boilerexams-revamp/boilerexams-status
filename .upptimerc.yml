@@ -1,0 +1,31 @@
+owner: boilerexams-revamp
+repo: boilerexams-status
+
+sites:
+  - name: Boilerexams
+    url: https://boilerexams.com/
+    # A Cloudflare or proxy error page still returns HTML, so check for the real page
+    __dangerous__body_down_if_text_missing: "<title>Boilerexams"
+  - name: Boilerexams API
+    url: https://api.boilerexams.com/v3/
+    # The API root reports database health; a 200 with the database down is still an outage
+    __dangerous__body_down_if_text_missing: '"database_ok":true'
+  - name: BoilerClasses
+    url: https://boilerclasses.com/
+    __dangerous__body_down_if_text_missing: "<title>BoilerClasses"
+  - name: Staff sign-in
+    url: https://login.boilerexams.com/-/health/live/
+
+status-website:
+  cname: status.boilerexams.com
+  logoUrl: https://boilerexams.com/boilerexams-logo.png
+  name: Boilerexams Status
+  introTitle: "Boilerexams status"
+  introMessage: Live uptime for Boilerexams and BoilerClasses, checked every 5 minutes.
+  navbar:
+    - title: Status
+      href: /
+    - title: Boilerexams
+      href: https://boilerexams.com
+    - title: BoilerClasses
+      href: https://boilerclasses.com
