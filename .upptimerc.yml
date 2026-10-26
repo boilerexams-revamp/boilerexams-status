@@ -21,6 +21,12 @@ sites:
     url: https://login.boilerexams.com/-/health/live/
     maxResponseTime: 5000
 
+# Commit as our GitHub App, not Upptime's public upptime-bot account: GitHub runs a schedule as whoever last
+# changed its workflow, and upptime-bot has no access here, so its edits silently stopped the schedules
+commitMessages:
+  commitAuthorName: boilerexams-status[bot]
+  commitAuthorEmail: 347989902+boilerexams-status[bot]@users.noreply.github.com
+
 status-website:
   cname: status.boilerexams.com
   theme: light
