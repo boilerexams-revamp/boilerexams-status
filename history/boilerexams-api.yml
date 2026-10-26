@@ -1,7 +1,7 @@
 url: https://api.boilerexams.com/v3/
-status: up
-code: 200
-responseTime: 321
-lastUpdated: 2026-10-26T00:59:00.609Z
+status: down
+code: 530
+responseTime: 60
+lastUpdated: 2026-10-26T22:31:25.055Z
 startTime: 2026-10-25T20:36:31.493Z
 generator: Upptime <https://github.com/upptime/upptime>
