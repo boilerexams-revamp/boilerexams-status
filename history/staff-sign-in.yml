@@ -1,7 +1,7 @@
 url: https://login.boilerexams.com/-/health/live/
-status: up
-code: 200
-responseTime: 789
-lastUpdated: 2026-10-26T00:59:01.635Z
+status: down
+code: 530
+responseTime: 63
+lastUpdated: 2026-10-26T22:31:53.667Z
 startTime: 2026-10-25T20:36:32.579Z
 generator: Upptime <https://github.com/upptime/upptime>
