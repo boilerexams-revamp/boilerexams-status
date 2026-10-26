@@ -1,0 +1,36 @@
+# GitHub runs frequent schedules hours late, so this starts Uptime CI every 5 minutes itself. A run lasts just
+# under the 6-hour job limit and then starts the next one; the hourly schedule restarts the chain if it breaks.
+# Not part of Upptime's template, so its updater leaves this file alone
+name: Uptime keep-alive
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+# One chain at a time: an extra start waits instead of running a second loop
+concurrency:
+  group: uptime-keepalive
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: Start Uptime CI every 5 minutes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          end=$((SECONDS + 345 * 60))
+          while [ "$SECONDS" -lt "$end" ]; do
+            gh workflow run uptime.yml -R "$GITHUB_REPOSITORY" --ref main || echo "Couldn't start Uptime CI; trying again in 5 minutes"
+            sleep 300
+          done
+      - name: Start the next keep-alive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run keepalive.yml -R "$GITHUB_REPOSITORY" --ref main
