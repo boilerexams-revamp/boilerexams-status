@@ -4,20 +4,20 @@
     "url": "https://boilerexams.com/",
     "icon": "https://icons.duckduckgo.com/ip3/boilerexams.com.ico",
     "slug": "boilerexams",
-    "status": "degraded",
-    "uptime": "99.93%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.93%",
-    "uptimeYear": "99.93%",
-    "time": 1151,
-    "timeDay": 9724,
-    "timeWeek": 2640,
-    "timeMonth": 1151,
-    "timeYear": 1151,
+    "status": "up",
+    "uptime": "99.90%",
+    "uptimeDay": "99.71%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.90%",
+    "uptimeYear": "99.90%",
+    "time": 1137,
+    "timeDay": 6761,
+    "timeWeek": 2440,
+    "timeMonth": 1137,
+    "timeYear": 1137,
     "dailyMinutesDown": {
       "2026-10-26": 10,
-      "2026-11-04": 0
+      "2026-11-04": 4
     }
   },
   {
