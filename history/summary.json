@@ -48,17 +48,17 @@
     "url": "https://boilerclasses.com/",
     "icon": "https://icons.duckduckgo.com/ip3/boilerclasses.com.ico",
     "slug": "boiler-classes",
-    "status": "degraded",
+    "status": "up",
     "uptime": "99.92%",
-    "uptimeDay": "99.88%",
-    "uptimeWeek": "99.94%",
+    "uptimeDay": "99.84%",
+    "uptimeWeek": "99.93%",
     "uptimeMonth": "99.92%",
     "uptimeYear": "99.92%",
-    "time": 2478,
-    "timeDay": 5533,
-    "timeWeek": 2790,
-    "timeMonth": 2478,
-    "timeYear": 2478,
+    "time": 2447,
+    "timeDay": 4762,
+    "timeWeek": 2656,
+    "timeMonth": 2447,
+    "timeYear": 2447,
     "dailyMinutesDown": {
       "2026-10-26": 9,
       "2026-11-01": 0,
@@ -66,7 +66,7 @@
       "2026-11-12": 4,
       "2026-11-13": 4,
       "2026-11-19": 5,
-      "2026-11-20": 1
+      "2026-11-20": 2
     }
   },
   {
